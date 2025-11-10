@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hafaliana IT Support — Assistance & maintenance informatique (réseaux, serveurs, dépannage).">
+<title>Hafaliana IT Support</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--muted:#8b949e;--text:#c9d1d9;--accent:#00ff88;--maxw:1100px;}
+*{box-sizing:border-box}html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:var(--bg);color:var(--text);}
+.topnav{position:fixed;top:0;left:0;right:0;height:50px;background:var(--panel);border-bottom:1px solid #30363d;display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:50;}
+.logo{font-weight:700;color:var(--accent);letter-spacing:1px;font-size:1.1rem;}
+.navlinks{list-style:none;display:flex;gap:12px;margin:0;padding:0;}
+.navlinks a{color:var(--muted);text-decoration:none;font-weight:600;}
+.navlinks a:hover{color:var(--text);}
+main{scroll-behavior:smooth;margin-top:50px;}
+.section{min-height:auto;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
+.content{max-width:var(--maxw);width:100%;}
+#home h1{font-size:2rem;color:var(--accent);margin:0}
+.tag{color:var(--muted);margin-top:4px}
+.lead{color:var(--muted);margin-top:6px}
+.quick-contact{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;}
+.btn{display:inline-block;padding:8px 12px;background:var(--accent);color:var(--bg);border-radius:6px;text-decoration:none;font-weight:700;font-size:0.95rem;}
+#services .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;padding:0}
+#services li{background:#0f1418;padding:10px;border-radius:6px;color:var(--text);list-style:none;font-size:0.95rem;}
+#experience h3{margin:0;font-size:1rem;}
+.date{color:var(--muted);font-size:0.85rem;}
+.contact-form{max-width:640px;margin-top:10px;display:flex;flex-direction:column;gap:8px;}
+.contact-form label{font-size:0.85rem;color:var(--muted);}
+.contact-form input,.contact-form textarea{background:#0f1418;border:1px solid #243036;color:var(--text);padding:8px;border-radius:6px;outline:none;font-size:0.95rem;}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent);}
+.submit{align-self:flex-start;background:var(--accent);color:var(--bg);border:none;padding:8px 12px;border-radius:6px;font-weight:700;font-size:0.95rem;}
+.direct{margin-top:12px;color:var(--muted);font-size:0.9rem;}
+footer{padding:12px;text-align:center;color:#6e7681;border-top:1px solid #30363d;font-size:0.85rem;}
+@media (max-width:700px){.navlinks{display:none}#home h1{font-size:1.6rem}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+<div class="logo">HIT</div>
+<ul class="navlinks">
+<li><a href="#home">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#experience">Expérience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+<section id="home" class="section">
+<div class="content">
+<h1>Hafaliana IT Support</h1>
+<p class="tag">Assistance informatique — Réseaux, serveurs, dépannage.</p>
+<p class="lead">Interventions à Antananarivo et assistance à distance.</p>
+<div class="quick-contact">
+<a class="btn" href="tel:+261345944063">📞 +261 34 59 440 63</a>
+<a class="btn" href="mailto:rasolofohasinahafaliana@gmail.com">📧 Email</a>
+</div>
+</div>
+</section>
+
+<section id="services" class="section">
+<div class="content">
+<h2>Services</h2>
+<ul class="cols">
+<li><strong>Dépannage informatique</strong> (PC, imprimantes, diagnostics réseaux)</li>
+<li><strong>Maintenance et sécurisation</strong> de serveurs Linux / Windows</li>
+<li><strong>Configuration routeurs</strong> (Mikrotik, Linksys, D-Link)</li>
+<li><strong>Messagerie professionnelle</strong> (iRedMail, SMTP/IMAP)</li>
+<li><strong>Assistance à distance</strong> via Tailscale / VNC / SSH</li>
+<li><strong>Scripting & automatisation</strong> (Python, Bash)</li>
+</ul>
+</div>
+</section>
+
+<section id="experience" class="section">
+<div class="content">
+<h2>Expérience & Formation</h2>
+<article>
+<h3>Stagiaire — Ministère de l'Éducation Nationale (MEN)</h3>
+<p class="date">Novembre 2024 — Février 2025</p>
+<ul>
+<li>Simulation d'un serveur de messagerie local (iRedMail sous Debian)</li>
+<li>Gestion réseaux : routeur, switch, câblage RJ45</li>
+<li>Support technique aux utilisateurs</li>
+</ul>
+</article>
+<article>
+<h3>Formation</h3>
+<p>IS-INFO (Annexe Andranomena) — Licence en Maintenance et Réseaux Informatiques (2021–2024)</p>
+</article>
+<article>
+<h3>Compétences clés</h3>
+<p>Linux, TCP/IP, DHCP, DNS, FTP, Samba, Mikrotik, Python, Bash, iRedMail, nftables, ufw</p>
+</article>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="content">
+<h2>Contact</h2>
+<p>Pour une intervention ou un diagnostic, contacte-moi par téléphone ou via le formulaire ci-dessous.</p>
+<form action="https://formspree.io/f/xyzabc" method="POST" class="contact-form">
+<label for="name">Nom</label>
+<input id="name" name="name" type="text" required>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required>
+<label for="phone">Téléphone</label>
+<input id="phone" name="phone" type="tel" value="+261345944063" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required placeholder="Décris brièvement le problème ou ta demande..."></textarea>
+<button type="submit" class="btn submit">Envoyer la demande</button>
+</form>
+<div class="direct">
+<p>Ou contacte directement :</p>
+<p>📞 <strong>+261 34 59 440 63</strong></p>
+<p>📧 <a href="mailto:rasolofohasinahafaliana@gmail.com">rasolofohasinahafaliana@gmail.com</a></p>
+<p>📍 Mahitsy, Antananarivo</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2025 Hafaliana IT Support</p>
+</footer>
+
+</body>
+</html>
